@@ -4,13 +4,11 @@ import { CommonModule } from '@angular/common';
 import { ContactComponent } from './contact.component';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  exports: [],
   declarations: [
     ContactComponent
   ],
-  providers: [],
+  imports: [
+    CommonModule
+  ]
 })
 export class ContactModule { }

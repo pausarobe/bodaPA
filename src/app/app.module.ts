@@ -3,15 +3,19 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppComponent } from './app.component';
-import { ContentModule } from './features/content/content.module';
 import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
+import { ContactModule } from './features/contact/contact.module';
+import { ContentModule } from './features/content/content.module';
+
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './features/header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +24,8 @@ import { SharedModule } from './shared/shared.module';
     CoreModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ContentModule
+    ContentModule,
+    ContactModule
   ],
   bootstrap: [AppComponent]
 })
